@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
+ini_set('error_reporting', E_ALL & ~E_DEPRECATED);
 
 /*
 |--------------------------------------------------------------------------

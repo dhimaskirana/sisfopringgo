@@ -6,14 +6,14 @@ class Models_Pengguna extends CI_Model {
 	// Fungsi untuk menampilkan semua data
 	public function view() {
 	    $this->db->select('*');     // select all columns
-	    $this->db->from('admin'); // FROM table
+	    $this->db->from('data_admin'); // FROM table
 	    return $this->db->get()->result();
 	}
   
   	// Fungsi untuk menampilkan data inventaris secara detail
   	public function view_by($id){
     	$this->db->select('*');     // select all columns
-    	$this->db->from('admin'); // FROM table
+    	$this->db->from('data_admin'); // FROM table
     	$this->db->where('id', $id);
     	return $this->db->get()->row();
   	}
@@ -53,7 +53,7 @@ class Models_Pengguna extends CI_Model {
 	      'kodelingkungan' => $this->input->post('kodelingkungan'),
 	      'level' => $this->input->post('jenis_admin')
 	    );	    
-	    $this->db->insert('admin', $data); // Untuk mengeksekusi perintah insert data
+	    $this->db->insert('data_admin', $data); // Untuk mengeksekusi perintah insert data
   	}
 
 	public function perbaruipengguna($id){
@@ -62,12 +62,12 @@ class Models_Pengguna extends CI_Model {
 	      'namalengkap' => $this->input->post('namalengkap')
 	    );    
 	    $this->db->where('id', $id);
-	    $this->db->update('admin', $data); // Untuk mengeksekusi perintah insert data
+	    $this->db->update('data_admin', $data); // Untuk mengeksekusi perintah insert data
   	}
 
 	public function delete($id){
 	    $this->db->where('id', $id);
-	    $this->db->delete('admin'); // Untuk mengeksekusi perintah delete data
+	    $this->db->delete('data_admin'); // Untuk mengeksekusi perintah delete data
 	}
 
 }

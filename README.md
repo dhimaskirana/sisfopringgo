@@ -21,3 +21,13 @@ Aplikasi ini berhenti dikembangkan sejak akhir 2019 sejak Keuskupan Agung Semara
 ## Penutup
 
 Aplikasi ini di upload ke github dan saya simpan sebagai arsip aplikasi hasil pengembangan saya. Jika anda tertarik dengan aplikasi ini bisa menghubungi saya. Terima kasih.
+
+## Instalasi
+
+1. Download aplikasi ini
+2. Copy source ke folder htdocs atau folder www di web server yang anda gunakan
+3. Jalankan `composer install` di folder source aplikasi
+4. Buat database
+5. Import file `sisfopringgo.sql` ke database yang telah anda buat
+6. Edit konfigurasi database di `/application/config/database.php`
+7. Selesai.

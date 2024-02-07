@@ -20,8 +20,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="row h-100 justify-content-center align-items-center">
             <div class="col-md-4">
                 <h1 class="text-center mb-4">Sistem Informasi Pringgolayan</h1>
-                <div class="card">
+                <div class="card mb-4">
                     <div class="card-body">
+                        <p><strong>Akun Admin</strong></p>
+                        <p>Username : <strong>superadmin</strong></p>
+                        <p>Password : <strong>superadmin</strong></p>
+                        <p><strong>Akun Admin Lingkungan</strong></p>
+                        <p>Username : <strong>admin_a</strong></p>
+                        <p>Password : <strong>admin_a</strong></p>
                         <?php echo $this->session->flashdata('login_error'); ?>
                         <form action="<?php echo base_url('login/aksi_login'); ?>" method="post">
                             <div class="input-group mb-3">
@@ -49,9 +55,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </form>
                     </div>
                     <div class="card-footer text-muted text-center">
-                        <span>2018 &copy; Sistem Informasi Pringgolayan</span>
+                        <p><span>2018 &copy; Sistem Informasi Pringgolayan</span></p>
                     </div>
                 </div>
+                <p class="text-center">Cek source code di <a href="https://github.com/dhimaskirana/sisfopringgo" target="_blank">github</a></p>
             </div>
         </div>
     </div>
